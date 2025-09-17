@@ -1,0 +1,116 @@
+{
+  "info": {
+    "name": "Recipes API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Recipe",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Spaghetti Carbonara\",\n  \"ingredients\": [\n    \"spaghetti\",\n    \"eggs\",\n    \"parmesan\",\n    \"pancetta\",\n    \"black pepper\"\n  ],\n  \"instructions\": \"Cook pasta. Fry pancetta. Mix eggs with cheese. Toss all together off heat.\",\n  \"prepTime\": 10,\n  \"cookTime\": 15,\n  \"servings\": 2,\n  \"cuisine\": \"Italian\",\n  \"author\": \"John Doe\"\n}"
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/recipes",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "recipes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "List Recipes",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/recipes",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "recipes"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Recipe",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/recipes/:id",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "recipes",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Recipe",
+      "request": {
+        "method": "PATCH",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Updated Title\"\n}"
+        },
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/recipes/:id",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "recipes",
+            ":id"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Recipe",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "{{BASE_URL}}/api/v1/recipes/:id",
+          "host": [
+            "{{BASE_URL}}"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "recipes",
+            ":id"
+          ]
+        }
+      }
+    }
+  ]
+}

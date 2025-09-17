@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title><%= title %></title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; }
+    code { background:#f4f4f4; padding:2px 6px; border-radius:4px; }
+  </style>
+</head>
+<body>
+  <h1><%= title %></h1>
+  <p>API base: <code><%= base %></code></p>
+  <h3>Endpoints</h3>
+  <ul>
+    <li>GET /api/v1/recipes — list all</li>
+    <li>POST /api/v1/recipes — create</li>
+    <li>GET /api/v1/recipes/:id — get single</li>
+    <li>PATCH /api/v1/recipes/:id — update</li>
+    <li>DELETE /api/v1/recipes/:id — delete</li>
+  </ul>
+</body>
+</html>

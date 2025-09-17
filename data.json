@@ -1,0 +1,8 @@
+{
+  "title": "First Local Recipe",
+  "ingredients": ["flour","water"],
+  "instructions": "Mix",
+  "prepTime": 5,
+  "cookTime": 10,
+  "servings": 2
+}
